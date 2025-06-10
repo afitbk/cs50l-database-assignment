@@ -1,0 +1,15 @@
+-- 1. Сколько актёров с именем, начинающимся на 'Meryl'
+SELECT COUNT(*) 
+FROM people 
+WHERE name LIKE 'Meryl %';
+
+-- 2. Сколько фильмов с названием, содержащим 'Titanic'
+SELECT COUNT(*) 
+FROM movies 
+WHERE title LIKE '%Titanic%';
+
+-- 3. Сколько фильмов с участием Kevin Bacon
+SELECT COUNT(*) 
+FROM cast_members 
+JOIN people ON cast_members.person_id = people.id 
+WHERE people.name = 'Kevin Bacon';
