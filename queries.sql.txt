@@ -13,3 +13,4 @@ SELECT COUNT(*)
 FROM cast_members  
 JOIN people ON cast_members.person_id = people.id  
 WHERE people.name = 'Kevin Bacon';
+
