@@ -1,4 +1,4 @@
-# CS50L Database Design Assignment
+ CS50L Database Design Assignment
 
 1. How many actors have the first name Meryl?
    Answer: Used SQL query with `LIKE 'Meryl %'` on the `people` table to count actors named Meryl.
